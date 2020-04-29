@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/my.css" rel="stylesheet" media="all">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+    <title><%- title %></title>
+</head>
+<body>
+    <div class="container">
+        <% if(navigation) {%>
+            <%- include('../components/navigation'); %>
+        <% } %>
+    </div>
+<div class="container">
+    <div class="text-center">
+        <h1 class="mt-1 mb-1"><%- content %></h1>
+        <img src="/img/eto_norma.png" alt="">
+    </div>
+</div>
+<footer class="container text-center mt-1 mb-1">
+    <p>ITLect - Nur-Sultan - Copyright © 2020</p>
+</footer>
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- Your custom scripts (optional) -->
+<script type="text/javascript"></script>
+<script src="/socket.io/socket.io.js"></script>
+<!-- <script>
+const socket = io.connect('http://localhost:3000');
+socket.emit('hello', {name: "Artem"});
+socket.on('hello2', (data) =>{
+    console.log("мы получили ответ от сервера", data)
+});
+
+  </script> -->
+</body>
+</html>
