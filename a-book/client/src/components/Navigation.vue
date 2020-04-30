@@ -14,6 +14,9 @@
                             :key="link.title"
                             :to="link.url"
                         >
+                            <v-list-tile-action>
+                                <v-icon left>{{link.icon}}</v-icon>
+                            </v-list-tile-action>
                             <v-list-item-content>
                                 <v-list-item-title v-text="link.title"></v-list-item-title>
                             </v-list-item-content>
@@ -46,14 +49,16 @@
 </template>
 
 <script>
+  // import { mdiPerson } from '@mdi/js'
   export default {
     name: 'Navigation',
     data: () => ({
       drawer: false,
       links: [
-        {title: 'Home', url: '/'},
-        {title: 'About', url: '/about'},
-        {title: 'Login | Registration', url: '/auth'}
+        {title: 'Home', icon: 'mdi-home', url: '/'},
+        {title: 'About', icon: 'mdi-ballot', url: '/about'},
+        {title: 'Login', icon: 'mdi-account', url: '/login'},
+        {title: 'Registration', icon: 'mdi-account-plus', url: '/register'},
       ],
       message: {
             text: 'Навигация приложения',

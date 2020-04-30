@@ -15,6 +15,7 @@
   "author": "Abzal.Tankibayev",
   "license": "ISC",
   "dependencies": {
+    "@mdi/js": "^5.1.45",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "ejs": "^3.1.2",
